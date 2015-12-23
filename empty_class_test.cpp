@@ -3,12 +3,17 @@
 using namespace std;
 
 class ABC{};
+struct S{};
 
 int main()
 {
-   ABC abc;
-   char c;
-   cout<<sizeof(abc)<<endl; 
-   cout<<sizeof(c)<<" "<<sizeof('c')<<" "<<sizeof(cout)<<endl ;
-   return 0;
+	ABC abc;
+	S s1;
+	char c;
+
+	cout<<"Size of class ABC is "<<sizeof(abc)<<endl;
+	cout<<"Size of struct S is "<<sizeof(s1)<<endl;
+	cout<<sizeof(c)<<endl;
+	cout<<sizeof('c')<<endl;
+	return 0;
 }
